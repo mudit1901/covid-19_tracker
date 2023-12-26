@@ -31,7 +31,7 @@ class _CountriesListState extends State<CountriesList> {
             child: TextFormField(
               controller: searchController,
               decoration: InputDecoration(
-                contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 20),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(50.0),
                 ),
@@ -43,7 +43,7 @@ class _CountriesListState extends State<CountriesList> {
                           searchController.text = "";
                           setState(() {});
                         },
-                        child: Icon(Icons.clear)),
+                        child: const Icon(Icons.clear)),
               ),
               onChanged: (value) {
                 setState(() {});

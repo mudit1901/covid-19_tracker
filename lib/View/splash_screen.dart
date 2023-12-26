@@ -19,6 +19,7 @@ class _SplashScreenState extends State<SplashScreen>
     _controller.dispose();
   }
 
+  @override
   void initState() {
     super.initState();
 
@@ -44,12 +45,12 @@ class _SplashScreenState extends State<SplashScreen>
         children: [
           AnimatedBuilder(
             animation: _controller,
-            child: Center(
-              child: Container(
+            child: const Center(
+              child: SizedBox(
                 height: 200,
                 width: 200,
                 child:
-                    const Image(image: AssetImage('assets/images/virus.png')),
+                    Image(image: AssetImage('assets/images/virus.png')),
               ),
             ),
             builder: (context, child) {
